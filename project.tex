@@ -3,7 +3,7 @@
 \newcommand{\modulename}{Theory of Algorithms}
 \newcommand{\projectyear}{2020}
 \newcommand{\projectname}{Project \projectyear}
-\newcommand{\duedate}{last commit on or before April 9\textsuperscript{th}, 2020}
+\newcommand{\duedate}{last commit on or before April 30\textsuperscript{th}, 2020}
 
 \usepackage{xcolor}
 \usepackage{minted}
@@ -22,7 +22,7 @@
 \usepackage{fancyhdr}
 \usepackage{lastpage}
 \usepackage{abstract}
-
+ 
 % Abstract
 \renewcommand{\abstractname}{}
 \renewcommand{\absnamepos}{empty}
@@ -31,7 +31,7 @@
 \fancypagestyle{plain}{
   \renewcommand{\headrulewidth}{0pt}
   \lhead{}
-  \rhead{}
+  \rhead{} 
   \cfoot{Page~\thepage~of~\pageref{LastPage}}
   \renewcommand{\footrulewidth}{0.1pt}
 }
@@ -46,7 +46,7 @@
 
 % Links
 \usepackage[hidelinks]{hyperref}
-
+ 
 % Tables
 \newcolumntype{x}[1]{>{\centering\arraybackslash\hspace{0pt}}p{#1}}
 
@@ -58,6 +58,65 @@
 \date{Due: \duedate}
 
 \begin{document}
+  
+\section*{New arrangements for COVID-19}
+
+As you are aware, there will be no in-house written exam for this module in Summer 2020.
+This is due to the national restrictions arising from the COVID-19 pandemic.
+We are mindful that you may have children at home, have sick or quarantining relatives, or may be in that situation yourself.
+We know that some have difficulties accessing the internet.
+
+None the less, we want to provide you the opportunity to complete this module in the normal time frame.
+We have put in place an alternative assessment, involving a re-scoping of the project you worked on during the semester.
+The re-scoped project mark will now be used for the entire module.
+
+By re-scoping, we mean that there are now four additional requirements for the project.
+Note that the work you have previously completed is still valid and will be assessed.
+The new requirements are as follows.
+
+\begin{enumerate}
+  \item You must immediately make your GitHub repository private and add \url{ian.mcloughlin@gmit.ie} as a collaborator.
+  \item Your MD5 program must accept command line arguments. It should at least accept the \mintinline{python}{--help} command line argument, printing information about running the program. I recommend you include at least one other command line option, along the lines of the usual command line arguments accepted by standard Linux programs. You might use the \mintinline{python}{getopt} function from the C Standard Library for this.
+  \item You must include tests to check that the code is correct. These should run when the \mintinline{python}{--test} command line option is used.
+  \item You must add a file called \mintinline{python}{overview.md} to your repository. This Markdown document should contain a report on your project, pitched at students in the year below you. I recommend you consult GitHub's documentation on Markdown as to how to incorporate images, lists, links, and other items to your document. I recommend your document, when printed at normal size is at least eight pages long. Please include at least the following items in it.
+  \begin{description}
+    \item[Introduction] An introduction to your repository and code. Describe what is contained in the repository and what the code does.
+    \item[Run] You should explain how to download, compile, and run your code. Include instructions of how to install the compiler.
+    \item[Test] Explain how to run the tests included in your code.
+    \item[Algorithm] Give an overview and explanation of the main algorithm(s) in your code. You might use a well-thought out diagram here.
+    \item[Complexity] This should be the most significant part of the report. You must give an analysis of the complexity of the MD5 algorithm, including the complexity of algorithms that attempt to reverse the algorithm. That is, algorithms that attempt to find an input for which the MD5 algorithm produces a given output. You should research this topic before writing this section and your analysis should be carefully referenced.
+    \item[References] Provide a list of references used in your project. The references should not just be a list of websites. Instead, there should be a short explanation of why each reference is relevant to your document.
+  \end{description}
+\end{enumerate}
+
+\noindent
+I appreciate it may take time to adjust to the ideas in this alternative assessment, and to this end the deadline has been pushed out to a \duedate.
+The original 30\% will be marked as before, although you may use this opportunity to enhance that work by the new deadline.
+The following marking scheme will apply for the extra 70\%.
+
+
+\begin{center}
+  \begin{tabular}{llp{8.4cm}}
+    \toprule
+    15\% & \textbf{Arguments} & Useful command line arguments informed by common command line tools in a typical Linux environment and as depicted by \mintinline{python}{--help}. \\
+    \midrule
+    15\% & \textbf{Testing} & Concise, well-documented, and effective tests of the algorithms. \\
+    \midrule
+    40\% & \textbf{Report} & Clear report explaining the technical aspects of the project. Language pitched at students in the year below. Typo-free and appropriately referenced. \\
+    \bottomrule
+  \end{tabular}
+\end{center}
+
+
+Finally, we will work with you wherever possible to provide flexibility in achieving a fair and valid mark.
+It is always possible to defer assessment until the next sitting if there is documentary evidence that this is necessary.
+Unfortunately, it is not clear that the situation will have changed when the next sitting comes around in August.
+If possible, I recommend you try your best to complete this assessment now.
+\vspace{4mm}
+
+\noindent \emph{The rest of this document remain unchanged.}
+
+
 \maketitle
 
 \noindent
@@ -150,7 +209,7 @@ Students should note, however, that in certain circumstances the examiner's over
     A higher overall course mark should not be determined by a single project, but rather your performance in all your work in all your modules.
     Here, you are just trying to demonstrate to yourself, to the examiners, and to prospective future employers, that you can take a reasonably straight-forward problem and solve it within a few weeks.
 \end{itemize}
-
+ 
 
 \bibliographystyle{plain}
 \bibliography{bibliography}
